@@ -6,11 +6,31 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Root from './components/Root/Root.jsx';
+import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
+import Home from './components/Home/Home.jsx';
+import ListedBooks from './components/ListedBooks/ListedBooks.jsx';
+import PagesToRead from './components/PagesToRead/PagesToRead.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+      {
+        path: "/listedbooks",
+        element: <ListedBooks></ListedBooks>,
+      },
+      {
+        path: "/pagestoread",
+        element: <PagesToRead></PagesToRead>,
+      }
+    ],
   },
 ]);
 
