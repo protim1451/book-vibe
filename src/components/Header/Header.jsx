@@ -1,18 +1,29 @@
 import { NavLink } from "react-router-dom";
-import './Header.css';
+import './Header.css'; 
+import { useState } from "react";
 
 const Header = () => {
 
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsDropdownOpen(!isDropdownOpen);
+    };
+
+    const closeDropdown = () => {
+        setIsDropdownOpen(false);
+    };
+
     const links = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/listedbooks">Listed Books</NavLink></li>
-        <li><NavLink to="/pagestoread">Pages to read</NavLink></li>
-        <li><NavLink to="/topbooks">Top Books</NavLink></li>
-        <li><NavLink to="/review">Submit Review</NavLink></li>
+        <li><NavLink to="/" onClick={closeDropdown}>Home</NavLink></li>
+        <li><NavLink to="/listedbooks" onClick={closeDropdown}>Listed Books</NavLink></li>
+        <li><NavLink to="/pagestoread" onClick={closeDropdown}>Pages to read</NavLink></li>
+        <li><NavLink to="/topbooks" onClick={closeDropdown}>Top Books</NavLink></li>
+        <li><NavLink to="/review" onClick={closeDropdown}>Submit Review</NavLink></li>
     </>
 
     return (
-        <div className="mx-4 lg:mx-32">
+        <div className="mx-2 lg:mx-32">
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
