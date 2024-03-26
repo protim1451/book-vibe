@@ -10,8 +10,8 @@ const Book = ({ book }) => {
         <div className="mt-6">
             <Link to={`/book/${bookId}`} className="no-underline">
                 <div className="card bg-base-100 shadow-xl p-6">
-                    <div className="bg-[#1313130D]">
-                        <figure className="h-60 w-44 ml-16">
+                    <div className="bg-[#1313130D] flex justify-center items-center">
+                        <figure className="h-60 w-44">
                             <img src={image} alt={bookName} className="rounded-xl" />
                         </figure>
                     </div>
