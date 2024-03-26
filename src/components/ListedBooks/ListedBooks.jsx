@@ -34,7 +34,7 @@ const ListedBooks = () => {
         // Render book list items
         return books.map(book => (
             <div key={book.bookId} className=" p-4 book-item mt-6 border lg:flex gap-6">
-                <div className="bg-[#0D0D0D0D] h-44 w-32 flex justify-center items-center">
+                <div className="bg-[#0D0D0D0D] w-full lg:h-44 lg:w-32 flex justify-center items-center">
                     <img src={book.image} alt="" />
                 </div>
                 <div className='p-3'>
