@@ -61,6 +61,11 @@ const ListedBooks = () => {
                             <p>Pages: {book.totalPages}</p>
                         </div>
                     </div>
+                    <div className='flex gap-2'>
+                        <p className='p-2 text-[#4CA9BD] border bg-[#8ad8e2] rounded-3xl'>Category: {book.category}</p>
+                        <p className='p-2 text-[#FFAC33] border bg-[#FFAC3326] rounded-3xl'>Rating: {book.rating}</p>
+                        <button className='text-white bg-[#17BE0A] border rounded-3xl p-2'>View Details</button>
+                    </div>
                 </div>
             </div>
         ));
@@ -68,9 +73,9 @@ const ListedBooks = () => {
 
     return (
         <div className="listed-books mx-4 lg:mx-32">
-            <h2>Listed Books</h2>
-            <div className="dropdown">
-                <label htmlFor="sort">Sort By:</label>
+            <h2 className='text-centre text-5xl font-bold bg-[#1313130D] flex justify-center items-center p-2'>Listed Books</h2>
+            <div className="dropdown mt-4 flex justify-center items-center">
+                <label className='p-2 bg-[#17BE0A] rounded-xl text-white font-semibold' htmlFor="sort">Sort By:</label>
                 <select id="sort" value={sortOption} onChange={handleSortChange}>
                     <option value="rating">Rating</option>
                     <option value="pages">Number of Pages</option>
