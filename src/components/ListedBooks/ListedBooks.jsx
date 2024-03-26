@@ -8,7 +8,7 @@ const ListedBooks = () => {
     const [selectedTab, setSelectedTab] = useState('read');
     const [sortOption, setSortOption] = useState('rating');
 
-    // Function to fetch read and wishlist books data from local storage
+    
     const getBooksFromLocalStorage = (listType) => {
         const storageKey = listType === 'read' ? 'readBooks' : 'wishlistBooks';
         return JSON.parse(localStorage.getItem(storageKey)) || [];

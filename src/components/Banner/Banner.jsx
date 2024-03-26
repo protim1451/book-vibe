@@ -7,7 +7,7 @@ const Banner = () => {
             <div className="p-6 lg:p-28">
                 <h1 className="text-[3.2rem] font-bold">Books to freshen up your bookshelf</h1>
                 <Link to="/listedbooks">
-                <button className="btn text-white bg-[#17BE0A] font-bold mt-4">View The List</button>
+                    <button className="btn text-white bg-[#17BE0A] font-bold mt-4">View The List</button>
                 </Link>
             </div>
             <div className="flex justify-center items-center">
