@@ -7,6 +7,8 @@ const Header = () => {
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/listedbooks">Listed Books</NavLink></li>
         <li><NavLink to="/pagestoread">Pages to read</NavLink></li>
+        <li><NavLink to="/topbooks">Top Books</NavLink></li>
+        <li><NavLink to="/review">Submit Review</NavLink></li>
     </>
 
     return (
@@ -28,7 +30,7 @@ const Header = () => {
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end gap-3">
+                <div className="navbar-end gap-1">
                     <a className="btn text-white bg-[#17BE0A]">Sign In</a>
                     <a className="btn text-white bg-[#59C6D2]">Sign Up</a>
                 </div>

@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "bookTitle": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "authorSummary": "Dan Brown is an American author known for his thriller novels.",
+      "bookSummary": "The Da Vinci Code follows Robert Langdon, a Harvard professor of symbology, as he investigates a murder in the Louvre Museum in Paris.",
+      "category": "Thriller",
+      "yearOfPublishing": 2003
+    },
+    {
+      "id": 2,
+      "bookTitle": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "authorSummary": "Harper Lee was an American novelist widely known for her novel 'To Kill a Mockingbird'.",
+      "bookSummary": "The novel is set in the fictional town of Maycomb, Alabama, during the Great Depression, and is told through the eyes of Jean Louise 'Scout' Finch.",
+      "category": "Fiction",
+      "yearOfPublishing": 1960
+    },
+    {
+      "id": 3,
+      "bookTitle": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+      "authorSummary": "J.K. Rowling is a British author known for her 'Harry Potter' series.",
+      "bookSummary": "The novel follows Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday.",
+      "category": "Fantasy",
+      "yearOfPublishing": 1997
+    },
+    {
+      "id": 4,
+      "bookTitle": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "authorSummary": "J.D. Salinger was an American writer known for his novel 'The Catcher in the Rye'.",
+      "bookSummary": "The novel recounts Holden Caulfield's experiences in New York City in the days following his expulsion from Pencey Prep, a fictional boarding school.",
+      "category": "Fiction",
+      "yearOfPublishing": 1951
+    },
+    {
+      "id": 5,
+      "bookTitle": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "authorSummary": "J.R.R. Tolkien was an English writer, poet, philologist, and university professor.",
+      "bookSummary": "The Hobbit follows the quest of home-loving Bilbo Baggins to win a share of the treasure guarded by Smaug the dragon.",
+      "category": "Fantasy",
+      "yearOfPublishing": 1937
+    },
+    {
+      "id": 6,
+      "bookTitle": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "authorSummary": "Jane Austen was an English novelist known for her romantic fiction.",
+      "bookSummary": "Pride and Prejudice follows the emotional development of Elizabeth Bennet, the protagonist of the novel, who learns the error of making hasty judgments and comes to appreciate the difference between the superficial and the essential.",
+      "category": "Romance",
+      "yearOfPublishing": 1813
+    },
+    {
+      "id": 7,
+      "bookTitle": "1984",
+      "author": "George Orwell",
+      "authorSummary": "George Orwell was an English novelist, essayist, journalist, and critic.",
+      "bookSummary": "1984 is a dystopian novel set in Airstrip One, formerly Great Britain, a province of the superstate Oceania, whose citizens are victims of perpetual war, omnipresent government surveillance, and public manipulation.",
+      "category": "Dystopian Fiction",
+      "yearOfPublishing": 1949
+    },
+    {
+      "id": 8,
+      "bookTitle": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "authorSummary": "J.R.R. Tolkien was an English writer, poet, philologist, and university professor.",
+      "bookSummary": "The Lord of the Rings follows the hobbit Frodo Baggins as he and the Fellowship embark on a quest to destroy the One Ring, to ensure the destruction of its maker, the Dark Lord Sauron.",
+      "category": "Fantasy",
+      "yearOfPublishing": 1954
+    },
+    {
+      "id": 9,
+      "bookTitle": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "authorSummary": "Suzanne Collins is an American television writer and novelist.",
+      "bookSummary": "The Hunger Games follows Katniss Everdeen, a young woman who volunteers to take her sister's place in a brutal televised competition.",
+      "category": "Young Adult",
+      "yearOfPublishing": 2008
+    },
+    {
+      "id": 10,
+      "bookTitle": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "authorSummary": "F. Scott Fitzgerald was an American novelist and short-story writer.",
+      "bookSummary": "The Great Gatsby is a story of the American Dream and its corruption, themes that defined Fitzgerald's generation.",
+      "category": "Fiction",
+      "yearOfPublishing": 1925
+    },
+    {
+      "id": 11,
+      "bookTitle": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+      "author": "C.S. Lewis",
+      "authorSummary": "C.S. Lewis was a British writer and lay theologian.",
+      "bookSummary": "The Lion, the Witch and the Wardrobe tells the story of four children who discover the magical land of Narnia through a wardrobe.",
+      "category": "Fantasy",
+      "yearOfPublishing": 1950
+    },
+    {
+      "id": 12,
+      "bookTitle": "Gone with the Wind",
+      "author": "Margaret Mitchell",
+      "authorSummary": "Margaret Mitchell was an American novelist.",
+      "bookSummary": "Gone with the Wind is a historical romance set against the backdrop of the American Civil War.",
+      "category": "Historical Fiction",
+      "yearOfPublishing": 1936
+    }
+  ]
+  
