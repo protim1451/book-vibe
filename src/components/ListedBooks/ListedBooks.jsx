@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { IoLocationOutline } from "react-icons/io5";
 import { FaUsers } from "react-icons/fa6";
 import { RiPagesLine } from "react-icons/ri";
+import { Link } from 'react-router-dom';
 
 const ListedBooks = () => {
     const [selectedTab, setSelectedTab] = useState('read');
@@ -64,7 +65,7 @@ const ListedBooks = () => {
                     <div className='flex gap-2'>
                         <p className='p-2 text-[#4CA9BD] border bg-[#8ad8e2] rounded-3xl'>Category: {book.category}</p>
                         <p className='p-2 text-[#FFAC33] border bg-[#FFAC3326] rounded-3xl'>Rating: {book.rating}</p>
-                        <button className='text-white bg-[#17BE0A] border rounded-3xl p-2'>View Details</button>
+                        <Link to={`/book/${book.bookId}`}><button className='text-white bg-[#17BE0A] border rounded-3xl p-2'>View Details</button></Link>
                     </div>
                 </div>
             </div>
