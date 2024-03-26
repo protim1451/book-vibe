@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { IoLocationOutline } from "react-icons/io5";
+import { FaUsers } from "react-icons/fa6";
+import { RiPagesLine } from "react-icons/ri";
 
 const ListedBooks = () => {
     const [selectedTab, setSelectedTab] = useState('read');
@@ -29,8 +32,36 @@ const ListedBooks = () => {
 
         // Render book list items
         return books.map(book => (
-            <div key={book.bookId} className="book-item">
-                <p>{book.bookId}</p>
+            <div key={book.bookId} className=" p-4 book-item mt-6 border lg:flex gap-6">
+                <div className="bg-[#0D0D0D0D] h-44 w-32 flex justify-center items-center">
+                    <img src={book.image} alt="" />
+                </div>
+                <div className='p-3'>
+                    <h3 className='font-bold my-3'>{book.bookName}</h3>
+                    <p className='mb-3'>By: {book.author}</p>
+                    <div className='flex gap-6'>
+                        {book.tags.map((tag, idx) => (
+                            <span className='text-green-400' key={idx}>
+                                #{tag}
+                                {idx !== book.tags.length - 1 && <span style={{ marginRight: '1em' }}>&nbsp;</span>}
+                            </span>
+                        ))}
+                        <div className='flex justify-center items-center gap-1'>
+                            <IoLocationOutline />
+                            <p>Year of Publishing:{book.yearOfPublishing}</p>
+                        </div>
+                    </div>
+                    <div className='my-3 flex gap-4'>
+                        <div className='flex justify-center items-center gap-1'>
+                            <FaUsers />
+                            <p>Publisher: {book.publisher}</p>
+                        </div>
+                        <div className='flex justify-center items-center gap-1'>
+                            <RiPagesLine />
+                            <p>Pages: {book.totalPages}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         ));
     };
