@@ -22,17 +22,17 @@ Custom Shape Bar Chart: Visualize your reading progress with a unique custom sha
 Responsive Design: Enjoy a seamless browsing experience on desktop and mobile devices.
 
 # Technologies Used
-React.js
+#### React.js
 
-React Router
+#### React Router
 
-JavaScript (ES6+)
+#### JavaScript (ES6+)
 
-HTML5
+#### HTML5
 
-CSS3 (Tailwind CSS)
+#### CSS3 (Tailwind CSS)
 
-Local Storage
+#### Local Storage
 
-Netlify(Hosting)
+#### Netlify(Hosting)
 
