@@ -14,7 +14,7 @@ const ListedBooks = () => {
         return JSON.parse(localStorage.getItem(storageKey)) || [];
     };
 
-    // Function to handle sorting option change
+    
     const handleSortChange = (e) => {
         setSortOption(e.target.value);
     };
@@ -40,7 +40,7 @@ const ListedBooks = () => {
                 <div className='p-3'>
                     <h3 className='font-bold my-3'>{book.bookName}</h3>
                     <p className='mb-3'>By: {book.author}</p>
-                    <div className='flex gap-6'>
+                    <div className='lg:flex gap-6'>
                         {book.tags.map((tag, idx) => (
                             <span className='text-green-400' key={idx}>
                                 #{tag}

@@ -16,24 +16,19 @@ const BookDetails = () => {
     const handleAddToLocalStorage = (action) => {
         const storageKey = action === 'read' ? 'readBooks' : 'wishlistBooks';
         const storageData = JSON.parse(localStorage.getItem(storageKey)) || [];
-
-        // Check if the book already exists in the storage data
         const isBookAdded = storageData.some(item => item.bookId === idInt);
 
         if (action === 'read') {
             if (isBookAdded) {
-                // Book is already added to the read list
                 toast.error(`This book is already added to your read list.`);
                 return;
             }
-            // Add book to read list
             storageData.push(book);
             localStorage.setItem(storageKey, JSON.stringify(storageData));
             setIsAddedToReadList(true);
             toast.success(`Book added to your read list.`);
         } else if (action === 'wishlist') {
             if (isBookAdded) {
-                // Book is already added to the wishlist
                 toast.error(`This book is already added to your wishlist.`);
                 return;
             }
@@ -41,12 +36,10 @@ const BookDetails = () => {
             const readBooks = JSON.parse(localStorage.getItem('readBooks')) || [];
             const isBookInReadList = readBooks.some(item => item.bookId === idInt);
             if (isBookInReadList) {
-                // Book is already in the read list, cannot add to wishlist
                 toast.error(`This book is already added to your read list. You cannot add it to your wishlist.`);
                 return;
             }
 
-            // Add book to wishlist
             storageData.push(book);
             localStorage.setItem(storageKey, JSON.stringify(storageData));
             setIsAddedToWishlist(true);
